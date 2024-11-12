@@ -58,12 +58,15 @@ nav {
 	display: block;
 }
 .navbar ul {
+	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	background-color: #aae1f9;
 }
 .navbar li {
+	flex: 1 0 auto;
 	text-transform: uppercase;
 	box-sizing: border-box;
 }
@@ -83,7 +86,15 @@ nav {
 
 /* content styling */
 
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 .card {
+	display: flex;
+	flex: 0 1 calc(33% - 1em);
 	margin-bottom: 2em;
 	border: 1px solid #fff;
 	box-sizing: border-box;
